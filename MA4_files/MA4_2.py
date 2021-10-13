@@ -13,6 +13,7 @@ def main():
 	print(f.get())
 	f.set(7)
 	print(f.get())
+	f.fib()
 
 if __name__ == '__main__':
 	main()
