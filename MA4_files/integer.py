@@ -11,9 +11,9 @@ class Integer(object):
 		lib.Integer_set.argtypes = [ctypes.c_void_p, ctypes.c_int]
 		lib.Integer_delete.argtypes = [ctypes.c_void_p]
 		lib.Integer_fib.argtypes = [ctypes.c_void_p]
-		lib.Integer_fib.restype = [ctypes.c_int]
+		lib.Integer_fib.restype = ctypes.c_int
 		lib.Integer_internal_fib.argtypes = [ctypes.c_int]
-  		lib.Integer_internal_fib.restype = [ctypes.c_int]
+  		lib.Integer_internal_fib.restype = ctypes.c_int
 		self.obj = lib.Integer_new(val)
 
 	def get(self):
