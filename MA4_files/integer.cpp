@@ -45,7 +45,7 @@ extern "C"{
 	int Integer_get(Integer* integer) {return integer->get();}
 	void Integer_set(Integer* integer, int n) {integer->set(n);}
 	int Integer_fib(Integer* integer) {return integer->fib();}
-	int Integer_internal_fib(Integer* integer, int n) {return integer->internal_fib(n)}
+	int Integer_internal_fib(Integer* integer, int n) {return integer->internal_fib(n);}
 	void Integer_delete(Integer* integer){
 		if (integer){
 			delete integer;
