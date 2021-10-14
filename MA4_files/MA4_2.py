@@ -19,7 +19,7 @@ def main():
     for i in range(10, 15):
         # python
         start = pc()
-        fib_pure_py(i)
+        fib_pure_py(10)
         end = pc()
         print(round(end-start, 2))
         time_python.append(round(end-start, 2))
