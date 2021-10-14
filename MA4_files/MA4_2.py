@@ -16,7 +16,7 @@ def fib_pure_py(n):
 def main():
     time_python = []
     time_cpp = []
-    for i in range(30, 45):
+    for i in range(10, 15):
         # python
         start = pc()
         fib_pure_py(i)
@@ -30,8 +30,8 @@ def main():
         end = pc()
         time_cpp.append(round(end-start, 2))
 
-    plt.plot(x=range(30, 45), y=time_python)
-    plt.plot(x=range(30, 45), y=time_cpp)
+    plt.plot(list(range(10, 15)), y=time_python)
+    plt.plot(list(range(10, 15)), y=time_cpp)
     plt.savefig("fibonacci_timing.png")
 
 
