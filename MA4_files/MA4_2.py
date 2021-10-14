@@ -21,6 +21,7 @@ def main():
         start = pc()
         fib_pure_py(i)
         end = pc()
+        print(round(end-start, 2))
         time_python.append(round(end-start, 2))
 
         # cpp
@@ -28,6 +29,7 @@ def main():
         f = Integer(i)
         f.fib()
         end = pc()
+        print(round(end-start, 2))
         time_cpp.append(round(end-start, 2))
 
     print(time_python)
