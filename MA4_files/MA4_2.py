@@ -30,9 +30,11 @@ def main():
         end = pc()
         time_cpp.append(round(end-start, 2))
 
+    print(time_python)
+    print(time_cpp)
     plt.plot(list(range(10, 15)), time_python)
     plt.plot(list(range(10, 15)), time_cpp)
-    plt.savefig("fibonacci_timing.png")
+    # plt.savefig("fibonacci_timing.png")
 
 
     # f = Integer(5)
